@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Vortex: File Manager</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131b2e;
+            --card-border: #1e293b;
+            --accent-cyan: #00f0ff;
+            --accent-teal: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 2rem 1.5rem; }
+        .container { max-width: 800px; margin: 0 auto; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 2.5rem; }
+        h1 { color: #ffffff; font-size: 2rem; margin-bottom: 0.5rem; }
+        h2 { color: var(--accent-cyan); font-size: 1.3rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        p, li { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        a { color: var(--accent-cyan); text-decoration: none; }
+        .back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Vortex: File Manager Home</a>
+        <h1>Privacy Policy</h1>
+        <p><strong>Application:</strong> Vortex: File Manager (Vortex: File Server & Client)<br>
+        <strong>Last updated:</strong> October 8, 2026<br>
+        <strong>Developer:</strong> Ilham Sugiri (Indonesia)</p>
+        <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 1.5rem 0;">
+
+        <h2>1. Data Collection & Privacy Principles</h2>
+        <p>Vortex: File Manager does NOT collect, harvest, store, or transmit any personal data.</p>
+        <ul>
+            <li>❌ No Analytics or Telemetry (No Firebase, Google Analytics, or third-party trackers).</li>
+            <li>❌ No Advertising SDKs (100% Ad-Free).</li>
+            <li>❌ No User Registration or accounts required.</li>
+            <li>❌ No External Server Relays (All transfers run locally or direct P2P).</li>
+        </ul>
+
+        <h2>2. Google API Services Compliance (Google Drive)</h2>
+        <p>Vortex requests the Google Drive scope (<code>https://www.googleapis.com/auth/drive</code>) solely to allow users to view their files, upload selected items, and download cloud files directly inside the application. Vortex adheres strictly to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements. Your tokens are stored securely in encrypted private app storage and are never shared.</p>
+
+        <h2>3. Permissions Justification</h2>
+        <ul>
+            <li><strong>MANAGE_EXTERNAL_STORAGE:</strong> Required to organize files, browse local storage, and host local servers.</li>
+            <li><strong>INTERNET:</strong> Required for local server protocols (FTP/SFTP/WebDAV/DLNA) and official cloud API connections.</li>
+            <li><strong>NEARBY_WIFI_DEVICES / LOCATION:</strong> Required by Android OS exclusively for Wi-Fi Direct peer discovery in Near-Drop transfers. Physical location is never accessed or stored.</li>
+        </ul>
+
+        <h2>4. Contact</h2>
+        <p>Email: <a href="mailto:ilham.piranha08@gmail.com">ilham.piranha08@gmail.com</a><br>
+        Developer: Ilham Sugiri</p>
+    </div>
+</body>
+</html>
