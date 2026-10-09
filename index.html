@@ -83,23 +83,41 @@
         .nav-links {
             display: flex;
             justify-content: center;
-            gap: 1.25rem;
-            margin-top: 1.5rem;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1.75rem;
             flex-wrap: wrap;
         }
 
         .nav-links a {
-            color: var(--text-muted);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: #e2e8f0;
+            background: rgba(19, 27, 46, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             text-decoration: none;
-            font-size: 0.95rem;
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            transition: all 0.2s;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-links a:hover {
             color: var(--accent-cyan);
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 240, 255, 0.12);
+            border-color: rgba(0, 240, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(0, 240, 255, 0.2);
+        }
+
+        .nav-links a:active {
+            transform: translateY(0);
+            background: rgba(0, 240, 255, 0.2);
         }
 
         section {
@@ -242,11 +260,11 @@
             <h1>Vortex: <span>File Manager</span></h1>
             <p class="tagline">High-performance local network file server hub, client explorer, and multi-cloud storage manager for Android.</p>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#google-drive">Google Drive Integration</a>
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="#contact">Contact</a>
+                <a href="#features">⚡ Features</a>
+                <a href="#google-drive">☁️ Google Drive</a>
+                <a href="#privacy">🛡️ Privacy Policy</a>
+                <a href="#terms">📜 Terms of Service</a>
+                <a href="#contact">✉️ Contact</a>
             </div>
         </div>
     </header>
