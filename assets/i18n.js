@@ -168,7 +168,8 @@ const I18N_DICTIONARY = {
         "pixara_final_desc": "Experience lightning-fast browsing, pro-grade photo and video editing, and uncompromised privacy protection in one unified Android app.",
         "pixara_final_btn": "⚡ Get Pixara Gallery on Google Play ↗",
         "pixara_final_back": "◀ Back to Ilham Sugiri Profile",
-        "pixara_footer_sub": "Pixara Gallery is an independent Android application crafted by Ilham Sugiri • Bantul, Indonesia"
+        "pixara_footer_sub": "Pixara Gallery is an independent Android application crafted by Ilham Sugiri • Bantul, Indonesia",
+        "nav_back_short": "◀ Back"
     },
     "id": {
         "nav_apps": "Aplikasi Android",
@@ -330,7 +331,8 @@ const I18N_DICTIONARY = {
         "pixara_final_desc": "Nikmati navigasi foto secepat kilat, studio pengeditan foto dan video tingkat pro, serta jaminan privasi tanpa kompromi dalam satu aplikasi Android terpadu.",
         "pixara_final_btn": "⚡ Dapatkan Pixara Gallery di Google Play ↗",
         "pixara_final_back": "◀ Kembali ke Profil Ilham Sugiri",
-        "pixara_footer_sub": "Pixara Gallery adalah aplikasi Android independen karya Ilham Sugiri • Bantul, Indonesia"
+        "pixara_footer_sub": "Pixara Gallery adalah aplikasi Android independen karya Ilham Sugiri • Bantul, Indonesia",
+        "nav_back_short": "◀ Kembali"
     },
     "es": {
         "nav_apps": "Apps de Android",
@@ -492,7 +494,8 @@ const I18N_DICTIONARY = {
         "pixara_final_desc": "Disfruta de navegación ultrarrápida, herramientas de edición de foto y video de nivel profesional y máxima privacidad en una sola aplicación para Android.",
         "pixara_final_btn": "⚡ Obtener Pixara Gallery en Google Play ↗",
         "pixara_final_back": "◀ Volver al Perfil de Ilham Sugiri",
-        "pixara_footer_sub": "Pixara Gallery es una aplicación Android independiente creada por Ilham Sugiri • Bantul, Indonesia"
+        "pixara_footer_sub": "Pixara Gallery es una aplicación Android independiente creada por Ilham Sugiri • Bantul, Indonesia",
+        "nav_back_short": "◀ Volver"
     },
     "pt": {
         "nav_apps": "Apps Android",
@@ -654,7 +657,8 @@ const I18N_DICTIONARY = {
         "pixara_final_desc": "Experimente navegação ultrarrápida, ferramentas completas de edição de foto e vídeo e garantia de privacidade sem concessões em um único app Android.",
         "pixara_final_btn": "⚡ Baixar Pixara Gallery no Google Play ↗",
         "pixara_final_back": "◀ Voltar ao Perfil de Ilham Sugiri",
-        "pixara_footer_sub": "Pixara Gallery é um aplicativo Android independente desenvolvido por Ilham Sugiri • Bantul, Indonésia"
+        "pixara_footer_sub": "Pixara Gallery é um aplicativo Android independente desenvolvido por Ilham Sugiri • Bantul, Indonésia",
+        "nav_back_short": "◀ Voltar"
     }
 };
 

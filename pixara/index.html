@@ -97,6 +97,8 @@
             background: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .nav-back:hover {
@@ -104,6 +106,10 @@
             background: rgba(168, 85, 247, 0.15);
             border-color: var(--accent-purple);
             transform: translateX(-2px);
+        }
+
+        .nav-back-short {
+            display: none;
         }
 
         .nav-title {
@@ -115,6 +121,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            white-space: nowrap;
         }
 
         .nav-title .dot {
@@ -136,6 +143,8 @@
             display: flex;
             align-items: center;
             gap: 0.85rem;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .btn-play-store {
@@ -144,6 +153,8 @@
             border: 1px solid rgba(255, 255, 255, 0.25);
             font-weight: 700;
             box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .btn-play-store:hover {
@@ -571,8 +582,119 @@
             margin-bottom: 0.4rem;
         }
 
-        footer strong {
-            color: var(--text-muted);
+        /* RESPONSIVE BREAKPOINTS */
+        @media (max-width: 900px) {
+            .nav-title {
+                display: none !important;
+            }
+            .hero-title {
+                font-size: 2.4rem;
+            }
+            .showcase-split {
+                grid-template-columns: 1fr;
+            }
+            .poster-wrapper {
+                max-width: 380px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-back-full {
+                display: none !important;
+            }
+            .nav-back-short {
+                display: inline !important;
+            }
+            .nav-content {
+                gap: 0.5rem;
+            }
+            .nav-actions {
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 580px) {
+            header {
+                padding: 0.65rem 0;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .nav-header-btn {
+                display: none !important;
+            }
+            .nav-back {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.84rem;
+            }
+            .lang-btn {
+                padding: 0.4rem 0.65rem;
+                font-size: 0.82rem;
+            }
+            .hero {
+                padding: 2.2rem 0 1.5rem;
+            }
+            .badge-pill {
+                font-size: 0.72rem;
+                padding: 0.35rem 0.75rem;
+                line-height: 1.4;
+            }
+            .hero-title {
+                font-size: 2.1rem;
+            }
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+            .hero-desc {
+                font-size: 0.95rem;
+            }
+            .hero-cta-group {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.75rem;
+            }
+            .hero-cta-group .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .privacy-callout {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 1.25rem;
+            }
+            .privacy-callout .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .specs-bar {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.65rem;
+            }
+            .spec-item {
+                padding: 0.85rem 0.5rem;
+            }
+            .spec-title {
+                font-size: 0.78rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .feature-card {
+                padding: 1.5rem;
+            }
+            .final-cta {
+                padding: 2.5rem 1.25rem;
+            }
+            .final-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            .final-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -581,8 +703,9 @@
     <!-- TOP NAVIGATION -->
     <header>
         <div class="container nav-content">
-            <a href="../" class="nav-back" data-i18n="nav_back_profile">
-                <span>◀</span> Back to Ilham Sugiri Profile
+            <a href="../" class="nav-back" title="Back to Profile">
+                <span class="nav-back-full" data-i18n="nav_back_profile">◀ Back to Ilham Sugiri Profile</span>
+                <span class="nav-back-short" data-i18n="nav_back_short">◀ Back</span>
             </a>
             
             <div class="nav-title">
@@ -591,7 +714,7 @@
             </div>
 
             <div class="nav-actions">
-                <a href="https://play.google.com/store/apps/details?id=com.pixara.gallery" target="_blank" rel="noopener noreferrer" class="btn btn-play-store" title="Get Pixara on Google Play" data-i18n="pixara_btn_play">
+                <a href="https://play.google.com/store/apps/details?id=com.pixara.gallery" target="_blank" rel="noopener noreferrer" class="btn btn-play-store nav-header-btn" title="Get Pixara on Google Play" data-i18n="pixara_btn_play">
                     ⚡ Get on Google Play ↗
                 </a>
 

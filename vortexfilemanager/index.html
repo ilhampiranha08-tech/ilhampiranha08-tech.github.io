@@ -95,6 +95,8 @@
             background: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .nav-back:hover {
@@ -102,6 +104,10 @@
             background: rgba(16, 185, 129, 0.15);
             border-color: var(--accent-emerald);
             transform: translateX(-3px);
+        }
+
+        .nav-back-short {
+            display: none;
         }
 
         .nav-title {
@@ -112,6 +118,7 @@
             font-weight: 700;
             color: #fff;
             letter-spacing: -0.01em;
+            white-space: nowrap;
         }
 
         .nav-title .dot {
@@ -126,6 +133,8 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         /* BUTTONS */
@@ -174,6 +183,8 @@
             border: 1px solid var(--accent-emerald);
             color: var(--accent-green-bright);
             box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .btn-official-web:hover {
@@ -516,9 +527,14 @@
             flex-wrap: wrap;
         }
 
-        /* RESPONSIVE */
+        /* RESPONSIVE BREAKPOINTS */
         @media (max-width: 900px) {
-            .hero-title { font-size: 2.4rem; }
+            .nav-title {
+                display: none !important;
+            }
+            .hero-title {
+                font-size: 2.4rem;
+            }
             .showcase-split {
                 grid-template-columns: 1fr;
                 padding: 2rem;
@@ -529,15 +545,80 @@
             }
         }
 
-        @media (max-width: 640px) {
-            .hero-title { font-size: 1.95rem; }
+        @media (max-width: 768px) {
+            .nav-back-full {
+                display: none !important;
+            }
+            .nav-back-short {
+                display: inline !important;
+            }
+            .nav-content {
+                gap: 0.5rem;
+            }
+            .nav-actions {
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 580px) {
+            header {
+                padding: 0.65rem 0;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .nav-header-btn {
+                display: none !important;
+            }
+            .nav-back {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.84rem;
+            }
+            .lang-btn {
+                padding: 0.4rem 0.65rem;
+                font-size: 0.82rem;
+            }
+            .hero {
+                padding: 2.2rem 0 1.5rem;
+            }
+            .hero-title { font-size: 2.1rem; }
             .hero-tagline { font-size: 1.1rem; }
+            .hero-desc { font-size: 0.95rem; }
+            .hero-cta-group {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.75rem;
+            }
+            .hero-cta-group .btn {
+                width: 100%;
+                justify-content: center;
+            }
             .official-site-callout {
                 flex-direction: column;
                 align-items: flex-start;
+                gap: 1rem;
+                padding: 1.25rem;
             }
             .official-site-callout .btn {
                 width: 100%;
+                justify-content: center;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .feature-card {
+                padding: 1.5rem;
+            }
+            .final-cta {
+                padding: 2.5rem 1.25rem;
+            }
+            .final-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            .final-actions .btn {
+                width: 100%;
+                justify-content: center;
             }
         }
     </style>
@@ -547,8 +628,9 @@
     <!-- STICKY TOP NAV -->
     <header>
         <div class="container nav-content">
-            <a href="../" class="nav-back" data-i18n="nav_back_profile">
-                <span>◀</span> Back to Ilham Sugiri Profile
+            <a href="../" class="nav-back" title="Back to Profile">
+                <span class="nav-back-full" data-i18n="nav_back_profile">◀ Back to Ilham Sugiri Profile</span>
+                <span class="nav-back-short" data-i18n="nav_back_short">◀ Back</span>
             </a>
             
             <div class="nav-title">
@@ -557,7 +639,7 @@
             </div>
 
             <div class="nav-actions">
-                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-official-web" title="Official Website" data-i18n="nav_official_web">
+                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-official-web nav-header-btn" title="Official Website" data-i18n="nav_official_web">
                     🌐 Official Website (vortexapp.my.id) ↗
                 </a>
 
