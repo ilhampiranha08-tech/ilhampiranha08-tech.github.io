@@ -58,7 +58,7 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(6, 182, 212, 0.15);
-    min-width: 190px;
+    min-width: 210px;
     padding: 0.4rem;
     z-index: 1000;
 }

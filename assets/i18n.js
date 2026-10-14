@@ -1,7 +1,10 @@
 /**
  * ANTIGRAVITY I18N ENGINE — ILHAM SUGIRI PORTFOLIO
- * Default: English ('en')
- * Supported: English ('en'), Bahasa Indonesia ('id')
+ * Supported Languages:
+ * - English ('en') [Default]
+ * - Bahasa Indonesia ('id')
+ * - Español ('es')
+ * - Português do Brasil ('pt')
  */
 
 const I18N_DICTIONARY = {
@@ -110,22 +113,16 @@ const I18N_DICTIONARY = {
         
         vortex_sec1_tag: "01 // CORE SYSTEM CAPABILITIES",
         vortex_sec1_title: "6 Core Pillars of Vortex",
-        
         vortex_f1_title: "Super Fast Explorer with Dual Pane",
         vortex_f1_desc: "Simultaneous side-by-side navigation across two folders or storage devices. Moving heavy files, comparing directories, and organizing archives is instant without switching apps.",
-        
         vortex_f2_title: "AES-256 Safe Folder Encryption",
         vortex_f2_desc: "Hardware-backed symmetric AES-256-GCM encrypted vault. Cryptographic keys are protected directly by the Android Hardware Keystore chip. Document and photo privacy is 100% fortified at the silicon level.",
-        
         vortex_f3_title: "WebDAV/FTP Server & P2P Near-Drop",
         vortex_f3_desc: "Transform your smartphone into a local wireless file server. Manage and download your phone's files from any PC or laptop browser without cables. Includes instant peer-to-peer Wi-Fi Direct Near-Drop transfers.",
-        
         vortex_f4_title: "SMB / FTP / SFTP / WebDAV Client",
         vortex_f4_desc: "All-in-one network client. Connect seamlessly to personal NAS (Network Attached Storage), Windows network shares (SMB), remote Linux servers over encrypted SSH (SFTP), and cloud WebDAV servers.",
-        
         vortex_f5_title: "Text Editor with Undo/Redo",
         vortex_f5_desc: "Lightweight yet capable built-in code and text editor. Features line numbering, unlimited Undo & Redo, rapid text search, and multi-format support for inspecting and modifying scripts on the fly.",
-        
         vortex_f6_title: "Storage Analyzer & Smart Clean-Up",
         vortex_f6_desc: "Interactive visual breakdown of internal storage and SD card capacity. Accurately pinpoints bulky space-hogging files, leftover cache, and duplicate files to keep your device clutter-free.",
         
@@ -254,22 +251,16 @@ const I18N_DICTIONARY = {
         
         vortex_sec1_tag: "01 // CORE SYSTEM CAPABILITIES",
         vortex_sec1_title: "6 Pilar Fitur Utama Vortex",
-        
         vortex_f1_title: "Super Fast Explorer with Dual Pane",
         vortex_f1_desc: "Navigasi dua folder atau media penyimpanan secara berdampingan dalam satu layar. Memindahkan berkas besar, membandingkan isi direktori, dan menyalin data menjadi instan tanpa perlu bolak-balik aplikasi.",
-        
         vortex_f2_title: "AES-256 Safe Folder Encryption",
         vortex_f2_desc: "Brankas berkas rahasia terenkripsi simetris AES-256-GCM. Kunci kriptografi diamankan langsung oleh chip perangkat keras Android Hardware Keystore. Privasi dokumen dan foto penting terlindungi 100% di level hardware.",
-        
         vortex_f3_title: "WebDAV/FTP Server & P2P Near-Drop",
         vortex_f3_desc: "Ubah smartphone menjadi server file nirkabel lokal. Kelola dan unduh seluruh file di HP dari peramban web laptop atau PC Windows/Mac/Linux tanpa kabel data. Dilengkapi transfer peer-to-peer instan via Wi-Fi Direct.",
-        
         vortex_f4_title: "SMB / FTP / SFTP / WebDAV Client",
         vortex_f4_desc: "Klien protokol jaringan all-in-one. Terhubung langsung ke NAS (Network Attached Storage), shared folder Windows (SMB), server Linux jarak jauh melalui enkripsi SSH (SFTP), dan server cloud WebDAV secara terpadu.",
-        
         vortex_f5_title: "Text Editor with Undo/Redo",
         vortex_f5_desc: "Editor teks dan kode sumber bawaan yang ringan namun andal. Dilengkapi penomoran baris, fitur Undo & Redo tanpa batas, pencarian cepat, dan dukungan multi-format untuk membaca serta mengedit kode langsung di perangkat.",
-        
         vortex_f6_title: "Storage Analyzer & Smart Clean-Up",
         vortex_f6_desc: "Visualisasi interaktif penggunaan memori internal dan kartu SD. Menganalisis file-file berukuran raksasa, file residu yang terlupakan, folder sampah, dan duplikasi berkas agar ruang penyimpanan tetap lega dan optimal.",
         
@@ -291,6 +282,282 @@ const I18N_DICTIONARY = {
         vortex_final_btn: "🌐 Buka https://vortexapp.my.id/ Sekarang ↗",
         vortex_final_back: "◀ Kembali ke Profil Ilham Sugiri",
         vortex_footer_sub: "Vortex: File Manager adalah aplikasi Android independen karya Ilham Sugiri • Bantul, Indonesia"
+    },
+
+    es: {
+        // NAV
+        nav_apps: "Apps de Android",
+        nav_trading: "Algo Trading (EA)",
+        nav_ubuntu: "Linux y Cómic",
+        nav_specs: "Especificaciones",
+        nav_contact: "Contacto",
+        nav_back_profile: "◀ Volver al Perfil de Ilham Sugiri",
+        nav_official_web: "🌐 Sitio Web Oficial (vortexapp.my.id) ↗",
+
+        // HERO PROFILE
+        badge_role: "⚡ Desarrollador Android • Software Lab",
+        badge_ubuntu: "🐧 15+ Años en Linux Ubuntu",
+        hero_tagline: "LIMPIO • POTENTE • ENFOCADO EN PRIVACIDAD",
+        hero_bio: "Ingeniero de Software y Creador Digital independiente radicado en <strong>Bantul, Indonesia</strong>. Especializado en ingeniería avanzada de aplicaciones Android nativas, sistemas de trading algorítmico cuantitativo (Expert Advisors MT4/MT5) y difusión de Linux de código abierto.",
+        btn_explore_apps: "⚡ Explorar Apps de Android",
+        btn_trading_ea: "📈 Robots de Trading (EA)",
+        btn_ubuntu_comic: "📘 Cómic Piranha Ubuntu",
+        btn_contact: "✉️ Contacto",
+
+        // STATS
+        stat_exp_lbl: "Años en Linux Ubuntu",
+        stat_nat_lbl: "Nativo y Sin Anuncios",
+        stat_qnt_lbl: "Expert Advisors MT4/MT5",
+        stat_prv_lbl: "Cero Rastreadores",
+
+        // SECTION 1: ANDROID APPS
+        sec1_tag: "01 // LABORATORIO DE SOFTWARE MÓVIL",
+        sec1_title: "Aplicaciones Android Destacadas",
+        sec1_desc: "Desarrollo de aplicaciones Android de alto rendimiento con filosofía <em>Privacy-First</em>, arquitectura modular y cero telemetría de terceros.",
+        
+        vortex_badge: "🔥 Aplicación Destacada",
+        vortex_tagline: "Rápido. Seguro. 100% Libre de Anuncios.",
+        vortex_desc: "Administrador de archivos revolucionario impulsado por un <strong>Sistema de Archivos Virtual (VFS)</strong> unificado. Cuenta con explorador de doble panel, servidor local FTP y WebDAV, clientes multinube (Google Drive, Dropbox, pCloud, OneDrive), transferencia inalámbrica P2P NearDrop y bóveda cifrada AES-256 GCM por hardware.",
+        btn_vortex_detail: "📱 Ver Detalles de Vortex",
+        btn_vortex_web: "🌐 vortexapp.my.id ↗",
+
+        pixara_badge: "✨ Galería Inteligente con IA",
+        pixara_tagline: "Galería Inteligente y Editor de Fotos",
+        pixara_desc: "Solución completa y moderna para gestión y edición de fotos en una sola app. Cuenta con editor multicapa profesional, <strong>Herramientas de IA 100% offline</strong> (Lector OCR y Eliminador de Fondos con IA), Bóveda Secreta con bloqueo biométrico, limpiador de duplicados y lienzo de collage libre.",
+        pixara_action: "🎨 Suite Creativa y Galería Inteligente",
+
+        // SECTION 2: ALGO TRADING
+        sec2_tag: "02 // LABORATORIO DE TRADING ALGORÍTMICO",
+        sec2_title: "Robots de Trading Algorítmico y Cuantitativo (EA)",
+        sec2_desc: "Sistemas de trading automatizados de alto rendimiento desarrollados en código nativo MQL4 y MQL5 para MetaTrader 4 y MetaTrader 5. Diseñados para ejecución institucional ultrarrápida, ventaja matemática y estricto control de riesgo.",
+        ea_hub_badge: "📈 Sistemas de Trading Automatizado",
+        ea_hub_title: "Super Expert Advisors Hub",
+        ea_hub_desc: "Sistemas de trading probados semi y totalmente automatizados para MetaTrader 4 y MetaTrader 5 con ejecución de baja latencia, control dinámico de riesgo y modelos cuantitativos sin concesiones.",
+        btn_ea_hub: "🚀 Visitar superexpertadvisors.web.id ↗",
+        ea1_desc: "Explota automáticamente rupturas de niveles de precio clave y momentos de alta volatilidad.",
+        ea2_desc: "Detecta patrones de velas envolventes con confirmación de estructura de tendencia para entradas de alta precisión.",
+        ea3_desc: "Robot especialista en Oro (XAUUSD) basado en el oscilador DeMarker para detectar agotamiento de tendencia.",
+        ea4_desc: "Algoritmo de ejecución automatizada para índices de Wall Street con protección inteligente de trailing stop.",
+        free_ea_note: "💡 También disponible: <strong>Serie Gratuita / Mini</strong> (Mini Breakout, Mini Engulfing, Mini Gold) para pruebas de la comunidad.",
+        free_ea_link: "Ver EAs Gratuitos →",
+
+        // SECTION 3: UBUNTU COMIC
+        sec3_tag: "03 // DIFUSIÓN DE LINUX Y CÓDIGO ABIERTO",
+        sec3_title: "15+ Años en Linux Ubuntu y Cómic Piranha",
+        sec3_desc: "Más de una década de experiencia práctica en el ecosistema Linux, dedicada a formar a las nuevas generaciones de desarrolladores en dominio de terminal, kernel y filosofía de software libre.",
+        comic_badge: "📚 Serie Educativa Creativa",
+        comic_title: "Serie de Cómic: PIRANHA UBUNTU",
+        comic_author: "Por Ilham Sugiri",
+        comic_synopsis: "<em>\"¡Acompaña a Riko en su sudadera roja y a Tux el Pingüino en su aventura por los misterios de Ubuntu Linux, eliminando errores de terminal, aprovechando la energía solar y liberando código abierto para todo el mundo!\"</em>",
+        comic_pill1: "✅ Volumen 1: 10 Capítulos Completos",
+        comic_pill2: "Terminal APT y Bash",
+        comic_pill3: "Privilegios Sudo",
+        comic_pill4: "IoT y Repositorios Libres",
+        comic_pill5: "Licencia CC BY-SA 4.0",
+        btn_read_comic: "📖 Leer Cómic Online (Lector Web)",
+        btn_github_comic: "⭐ Repositorio en GitHub",
+
+        // SECTION 4: DEV SPECS
+        sec4_tag: "04 // ESPECIFICACIONES Y FILOSOFÍA DEL SISTEMA",
+        sec4_title: "Arquitectura y Estándares de Ingeniería",
+        sec4_desc: "Parámetros de ingeniería y filosofía de ejecución aplicados en cada línea de código de producción.",
+        term_exp_val: "15+ Años en el Ecosistema Linux Ubuntu",
+        term_plat_val: "100% Ecosistema Android Nativo (Kotlin, Jetpack Compose, VFS, Coroutines)",
+        term_quant_val: "Motores de Ejecución Algorítmica Nativos MQL4 y MQL5 (.ex4 / .ex5)",
+        term_integ_val: "Cero Rastreo • Sin Servidores Intermediarios • 100% Sin Anuncios • Keystore por Hardware",
+        term_phil_val: "Arquitectura Modular • Alto Rendimiento Escalable • UX Elevada",
+
+        // SECTION 5: CONTACT
+        sec5_badge: "📬 Conectemos y Construyamos",
+        sec5_title: "Colaboremos Juntos",
+        sec5_desc: "Disponible para proyectos de ingeniería Android avanzada, desarrollo de Expert Advisors personalizados para MT4/MT5 o colaboraciones educativas en tecnologías de código abierto.",
+
+        // FOOTER
+        footer_rights: "&copy; 2026 <strong>Ilham Sugiri</strong>. Todos los derechos reservados.",
+        footer_crafted: "Creado con pasión en Bantul • Impulsado por Linux y GitHub Pages",
+
+        // VORTEX PAGE SPECIFIC
+        vortex_page_tag: "⚡ 100% ANDROID NATIVO • CERO RASTREO • SIN ANUNCIOS",
+        vortex_hero_tagline: "Rápido. Seguro. Sin Anuncios. Experiencia de Almacenamiento Android de Próxima Generación.",
+        vortex_hero_desc: "Una aplicación de gestión de archivos Android de próxima generación construida totalmente con rendimiento nativo puro (Kotlin y Jetpack Compose). Con navegación de Doble Panel, cifrado AES-256 respaldado por hardware militar, servidores inalámbricos WebDAV/FTP y una arquitectura sin telemetría.",
+        vortex_btn_official: "🌐 Abrir Sitio Web Oficial (vortexapp.my.id) ↗",
+        vortex_btn_privacy: "🛡️ Política de Privacidad",
+        vortex_btn_github: "💻 GitHub del Desarrollador",
+        vortex_callout_title: "🌐 Sitio Web Oficial: vortexapp.my.id",
+        vortex_callout_desc: "Descarga versiones oficiales, conoce la verificación de Google Drive OAuth y consulta el registro de cambios.",
+        vortex_callout_btn: "Visitar vortexapp.my.id ↗",
+        
+        vortex_sec1_tag: "01 // CAPACIDADES DEL SISTEMA",
+        vortex_sec1_title: "6 Pilares Fundamentales de Vortex",
+        vortex_f1_title: "Explorador Ultrarrápido con Doble Panel",
+        vortex_f1_desc: "Navegación simultánea lado a lado en dos carpetas o unidades de almacenamiento. Mover archivos pesados, comparar directorios y organizar datos es instantáneo sin cambiar de aplicación.",
+        vortex_f2_title: "Cifrado de Carpeta Segura AES-256",
+        vortex_f2_desc: "Bóveda cifrada simétrica AES-256-GCM respaldada por hardware. Las claves se protegen en el chip Android Hardware Keystore. Máxima privacidad a nivel de silicio.",
+        vortex_f3_title: "Servidor WebDAV/FTP y Near-Drop P2P",
+        vortex_f3_desc: "Transforma tu teléfono en un servidor inalámbrico local. Administra y descarga archivos desde el navegador de tu PC sin cables. Incluye transferencias directas P2P por Wi-Fi Direct.",
+        vortex_f4_title: "Cliente Multiprotocolo (SMB, FTP, SFTP, WebDAV)",
+        vortex_f4_desc: "Cliente de red todo en uno. Conéctate a NAS personales, carpetas compartidas de Windows (SMB), servidores Linux remotos con SSH cifrado (SFTP) y servidores WebDAV en la nube.",
+        vortex_f5_title: "Editor de Texto y Código con Deshacer/Rehacer",
+        vortex_f5_desc: "Editor ligero e integrado con numeración de líneas, deshacer y rehacer ilimitados, búsqueda rápida y soporte multiformato para inspeccionar y editar código en el móvil.",
+        vortex_f6_title: "Analizador de Almacenamiento y Limpieza Inteligente",
+        vortex_f6_desc: "Visualización interactiva del uso de almacenamiento interno y tarjeta SD. Localiza con precisión archivos gigantes, caché residual y duplicados para mantener tu dispositivo libre de basura.",
+        
+        vortex_sec2_tag: "02 // ARQUITECTURA E INGENIERÍA",
+        vortex_arch_title: "Diseñado para Velocidad, Seguridad y Cero Anuncios",
+        vortex_arch_desc: "Vortex no es un explorador más. Creado desde cero por Ilham Sugiri con la robustez y disciplina de Linux en dispositivos Android modernos.",
+        vortex_arch_p1_title: "Sistema de Archivos Virtual (VFS) Modular:",
+        vortex_arch_p1_desc: "Abstrae el almacenamiento local, SAF, USB OTG, NAS SMB, FTP, SFTP y WebDAV en un único flujo de E/S de alto rendimiento.",
+        vortex_arch_p2_title: "Cero Telemetría y 100% Sin Publicidad:",
+        vortex_arch_p2_desc: "Sin SDKs de anuncios, sin rastreadores de comportamiento y sin proxies intermediarios. Todo el tráfico fluye estrictamente punto a punto (P2P).",
+        vortex_arch_p3_title: "Kotlin Coroutines Reactivo y Jetpack Compose:",
+        vortex_arch_p3_desc: "Interfaz de usuario moderna a 120Hz fluidos sin bloqueos visuales al indexar millones de archivos del sistema.",
+        vortex_arch_p4_title: "Integración Segura con la Nube mediante OAuth:",
+        vortex_arch_p4_desc: "Soporte oficial de Google Drive mediante tokens de autorización sin almacenar contraseñas de usuario.",
+        
+        vortex_final_badge: "🌐 DOMINIO APEX OFICIAL",
+        vortex_final_title: "Explora el Portal Oficial de Vortex",
+        vortex_final_desc: "Vortex: File Manager cuenta con su propio portal oficial para documentación técnica, cumplimiento con Google API Trust & Safety y lanzamientos de software.",
+        vortex_final_btn: "🌐 Abrir https://vortexapp.my.id/ Ahora ↗",
+        vortex_final_back: "◀ Volver al Perfil de Ilham Sugiri",
+        vortex_footer_sub: "Vortex: File Manager es una aplicación Android independiente creada por Ilham Sugiri • Bantul, Indonesia"
+    },
+
+    pt: {
+        // NAV
+        nav_apps: "Apps Android",
+        nav_trading: "Algo Trading (EA)",
+        nav_ubuntu: "Linux e Quadrinhos",
+        nav_specs: "Especificações",
+        nav_contact: "Contato",
+        nav_back_profile: "◀ Voltar ao Perfil de Ilham Sugiri",
+        nav_official_web: "🌐 Site Oficial (vortexapp.my.id) ↗",
+
+        // HERO PROFILE
+        badge_role: "⚡ Desenvolvedor Android • Software Lab",
+        badge_ubuntu: "🐧 15+ Anos em Linux Ubuntu",
+        hero_tagline: "LIMPO • PODEROSO • FOCADO EM PRIVACIDADE",
+        hero_bio: "Engenheiro de Software e Criador Digital independente baseado em <strong>Bantul, Indonésia</strong>. Especializado em engenharia avançada de aplicativos Android nativos, robôs de trading algorítmico quantitativo (Expert Advisors MT4/MT5) e defesa do código aberto Linux.",
+        btn_explore_apps: "⚡ Explorar Apps Android",
+        btn_trading_ea: "📈 Robôs de Trading (EA)",
+        btn_ubuntu_comic: "📘 Quadrinho Piranha Ubuntu",
+        btn_contact: "✉️ Contato",
+
+        // STATS
+        stat_exp_lbl: "Anos em Linux Ubuntu",
+        stat_nat_lbl: "Nativo e Sem Anúncios",
+        stat_qnt_lbl: "Expert Advisors MT4/MT5",
+        stat_prv_lbl: "Zero Rastreadores",
+
+        // SECTION 1: ANDROID APPS
+        sec1_tag: "01 // LABORATÓRIO DE SOFTWARE MOBILE",
+        sec1_title: "Aplicativos Android de Destaque",
+        sec1_desc: "Construção de aplicativos Android de alta performance com princípios de <em>Privacidade em Primeiro Lugar</em>, arquitetura modular e zero telemetria de terceiros.",
+        
+        vortex_badge: "🔥 Aplicativo Principal",
+        vortex_tagline: "Rápido. Seguro. 100% Livre de Anúncios.",
+        vortex_desc: "Gerenciador de arquivos revolucionário com <strong>Sistema de Arquivos Virtual (VFS)</strong> unificado. Possui navegação em painel duplo, servidor local FTP e WebDAV, clientes multinuvem (Google Drive, Dropbox, pCloud, OneDrive), transferência sem fio P2P NearDrop e cofre criptografado AES-256 GCM em hardware.",
+        btn_vortex_detail: "📱 Ver Detalhes do Vortex",
+        btn_vortex_web: "🌐 vortexapp.my.id ↗",
+
+        pixara_badge: "✨ Galeria Inteligente com IA",
+        pixara_tagline: "Galeria Inteligente e Editor de Fotos",
+        pixara_desc: "Solução completa e moderna para gerenciamento e edição de fotos em um único aplicativo. Apresenta editor multicamadas profissional, <strong>Ferramentas de IA 100% offline</strong> (OCR e removedor de fundo com IA), Cofre Secreto com biometria, limpador de duplicatas e tela de colagem livre.",
+        pixara_action: "🎨 Suíte Criativa e Galeria Inteligente",
+
+        // SECTION 2: ALGO TRADING
+        sec2_tag: "02 // LABORATÓRIO DE TRADING ALGORÍTMICO",
+        sec2_title: "Robôs de Trading Algorítmico e Quantitativo (EA)",
+        sec2_desc: "Sistemas automatizados de trading de alto rendimento desenvolvidos em linguagem nativa MQL4 e MQL5 para MetaTrader 4 e MetaTrader 5. Projetados para execução institucional ultrarrápida, vantagem matemática e rigoroso gerenciamento de risco.",
+        ea_hub_badge: "📈 Sistemas de Trading Automatizado",
+        ea_hub_title: "Super Expert Advisors Hub",
+        ea_hub_desc: "Sistemas semi e totalmente automatizados testados para MetaTrader 4 e MetaTrader 5 com execução de baixa latência, controle de risco dinâmico e modelagem quantitativa precisa.",
+        btn_ea_hub: "🚀 Acessar superexpertadvisors.web.id ↗",
+        ea1_desc: "Explora automaticamente rompimentos de níveis críticos de preço e alta volatilidade.",
+        ea2_desc: "Detecta padrões de candles envolventes com confirmação de tendência para pontos de entrada com alta precisão.",
+        ea3_desc: "Robô especialista em Ouro (XAUUSD) baseado no oscilador DeMarker para identificar exaustão de tendência.",
+        ea4_desc: "Algoritmo de execução automatizada para índices de Wall Street com proteção inteligente de trailing stop.",
+        free_ea_note: "💡 Também disponível: <strong>Série Gratuita / Mini</strong> (Mini Breakout, Mini Engulfing, Mini Gold) para testes da comunidade.",
+        free_ea_link: "Ver EAs Gratuitos →",
+
+        // SECTION 3: UBUNTU COMIC
+        sec3_tag: "03 // ADVOCACIA LINUX E OPEN SOURCE",
+        sec3_title: "15+ Anos em Linux Ubuntu e Quadrinho Piranha",
+        sec3_desc: "Mais de uma década de experiência prática no ecossistema Linux, dedicada a ensinar as novas gerações de desenvolvedores sobre domínio do terminal, kernel e filosofia do software livre.",
+        comic_badge: "📚 Série Educativa Criativa",
+        comic_title: "Série em Quadrinhos: PIRANHA UBUNTU",
+        comic_author: "Por Ilham Sugiri",
+        comic_synopsis: "<em>\"Acompanhe Riko em seu casaco vermelho e Tux o Pinguim em sua jornada pelos mistérios do Ubuntu Linux, combatendo bugs de terminal, aproveitando a energia solar e libertando o código aberto para o mundo inteiro!\"</em>",
+        comic_pill1: "✅ Volume 1: 10 Capítulos Completos",
+        comic_pill2: "Terminal APT e Bash",
+        comic_pill3: "Privilégios Sudo",
+        comic_pill4: "IoT e Repositórios Livres",
+        comic_pill5: "Licença CC BY-SA 4.0",
+        btn_read_comic: "📖 Ler Quadrinho Online (Web Reader)",
+        btn_github_comic: "⭐ Repositório no GitHub",
+
+        // SECTION 4: DEV SPECS
+        sec4_tag: "04 // ESPECIFICAÇÕES E FILOSOFIA DO SISTEMA",
+        sec4_title: "Arquitetura e Padrões de Engenharia",
+        sec4_desc: "Parâmetros de engenharia e filosofia de execução aplicados em cada linha de código de produção.",
+        term_exp_val: "15+ Anos no Ecossistema Linux Ubuntu",
+        term_plat_val: "100% Ecossistema Android Nativo (Kotlin, Jetpack Compose, VFS, Coroutines)",
+        term_quant_val: "Motores de Execução Algorítmica Nativos MQL4 e MQL5 (.ex4 / .ex5)",
+        term_integ_val: "Zero Rastreamento • Sem Servidores Intermediários • 100% Sem Anúncios • Keystore em Hardware",
+        term_phil_val: "Arquitetura Modular • Alto Desempenho Escalável • UX Aprimorada",
+
+        // SECTION 5: CONTACT
+        sec5_badge: "📬 Vamos Conectar e Construir",
+        sec5_title: "Vamos Colaborar",
+        sec5_desc: "Aberto para discussões sobre engenharia Android avançada, desenvolvimento de Expert Advisors personalizados para MT4/MT5 ou parcerias educacionais em tecnologia de código aberto.",
+
+        // FOOTER
+        footer_rights: "&copy; 2026 <strong>Ilham Sugiri</strong>. Todos os direitos reservados.",
+        footer_crafted: "Desenvolvido com dedicação em Bantul • Hospedado em Linux e GitHub Pages",
+
+        // VORTEX PAGE SPECIFIC
+        vortex_page_tag: "⚡ 100% ANDROID NATIVO • ZERO RASTREAMENTO • SEM ANÚNCIOS",
+        vortex_hero_tagline: "Rápido. Seguro. Sem Anúncios. A Nova Geração em Gerenciamento de Armazenamento Android.",
+        vortex_hero_desc: "Um gerenciador de arquivos Android de última geração desenvolvido com performance nativa pura (Kotlin e Jetpack Compose). Apresenta navegação em Painel Duplo, criptografia AES-256 de nível militar protegida por hardware, servidores sem fio WebDAV/FTP e arquitetura sem telemetria.",
+        vortex_btn_official: "🌐 Abrir Site Oficial (vortexapp.my.id) ↗",
+        vortex_btn_privacy: "🛡️ Política de Privacidade",
+        vortex_btn_github: "💻 GitHub do Desenvolvedor",
+        vortex_callout_title: "🌐 Site Oficial: vortexapp.my.id",
+        vortex_callout_desc: "Baixe lançamentos oficiais, conheça a verificação do Google Drive OAuth e acompanhe as novidades.",
+        vortex_callout_btn: "Acessar vortexapp.my.id ↗",
+        
+        vortex_sec1_tag: "01 // CAPACIDADES CENTRAIS DO SISTEMA",
+        vortex_sec1_title: "6 Pilares Fundamentais do Vortex",
+        vortex_f1_title: "Explorador Ultrarrápido com Painel Duplo",
+        vortex_f1_desc: "Navegação simultânea lado a lado em duas pastas ou unidades de armazenamento. Mover arquivos pesados, comparar diretórios e organizar dados é instantâneo sem alternar de app.",
+        vortex_f2_title: "Criptografia de Pasta Segura AES-256",
+        vortex_f2_desc: "Cofre criptografado simétrico AES-256-GCM protegido por hardware. As chaves criptográficas ficam seguras no chip Android Hardware Keystore. Máxima privacidade no nível do silício.",
+        vortex_f3_title: "Servidor WebDAV/FTP e Near-Drop P2P",
+        vortex_f3_desc: "Transforme seu smartphone em um servidor de arquivos sem fio local. Gerencie e baixe arquivos do celular pelo navegador do seu PC sem cabos. Inclui transferências P2P diretas via Wi-Fi Direct.",
+        vortex_f4_title: "Cliente Multiprotocolo (SMB, FTP, SFTP, WebDAV)",
+        vortex_f4_desc: "Cliente de rede completo. Conecte-se a servidores NAS pessoais, pastas compartilhadas do Windows (SMB), servidores Linux remotos via SSH criptografado (SFTP) e servidores WebDAV na nuvem.",
+        vortex_f5_title: "Editor de Texto e Código com Desfazer/Refazer",
+        vortex_f5_desc: "Editor leve e integrado com numeração de linhas, Desfazer e Refazer ilimitados, pesquisa rápida e suporte multiformato para visualizar e editar código no próprio aparelho.",
+        vortex_f6_title: "Analisador de Armazenamento e Limpeza Inteligente",
+        vortex_f6_desc: "Visualização interativa da capacidade da memória interna e cartão SD. Identifica com precisão arquivos gigantes, resíduos de cache e arquivos duplicados para liberar espaço.",
+        
+        vortex_sec2_tag: "02 // ARQUITETURA E ENGENHARIA",
+        vortex_arch_title: "Projetado para Velocidade, Segurança e Zero Anúncios",
+        vortex_arch_desc: "O Vortex não é apenas mais um gerenciador. Desenvolvido do zero por Ilham Sugiri com a robustez e disciplina do Linux nos dispositivos Android modernos.",
+        vortex_arch_p1_title: "Sistema de Arquivos Virtual (VFS) Modular:",
+        vortex_arch_p1_desc: "Abstrai armazenamento local, SAF, USB OTG, NAS SMB, FTP, SFTP e WebDAV em um fluxo de I/O unificado de alto rendimento.",
+        vortex_arch_p2_title: "Zero Telemetria e 100% Livre de Anúncios:",
+        vortex_arch_p2_desc: "Sem SDKs de anúncios, sem rastreadores de comportamento e sem proxies intermediários. Todo o tráfego flui estritamente ponto a ponto (P2P).",
+        vortex_arch_p3_title: "Kotlin Coroutines Reativo e Jetpack Compose:",
+        vortex_arch_p3_desc: "Interface gráfica moderna renderizada a suaves 120Hz sem travamentos ao indexar árvores massivas de diretórios.",
+        vortex_arch_p4_title: "Integração Segura com Nuvem via OAuth:",
+        vortex_arch_p4_desc: "Suporte oficial ao Google Drive usando tokens de autorização sem armazenar senhas de usuários.",
+        
+        vortex_final_badge: "🌐 DOMÍNIO APEX OFICIAL",
+        vortex_final_title: "Conheça o Portal Oficial do Vortex",
+        vortex_final_desc: "O Vortex: File Manager possui seu próprio portal oficial para documentação técnica, conformidade com o Google API Trust & Safety e downloads de versões oficiais.",
+        vortex_final_btn: "🌐 Abrir https://vortexapp.my.id/ Agora ↗",
+        vortex_final_back: "◀ Voltar ao Perfil de Ilham Sugiri",
+        vortex_footer_sub: "Vortex: File Manager é um aplicativo Android independente desenvolvido por Ilham Sugiri • Bantul, Indonésia"
     }
 };
 
@@ -396,6 +663,14 @@ function detectPreferredLanguage() {
         // Indonesian locale tags: 'id', 'id-id', 'in', 'in-id'
         if (code.startsWith('id') || code.startsWith('in')) {
             return 'id';
+        }
+        // Spanish locale tags: 'es', 'es-es', 'es-mx', 'es-ar', 'es-co', etc.
+        if (code.startsWith('es')) {
+            return 'es';
+        }
+        // Portuguese locale tags: 'pt', 'pt-br', 'pt-pt', etc.
+        if (code.startsWith('pt')) {
+            return 'pt';
         }
         // English locale tags
         if (code.startsWith('en')) {
