@@ -372,13 +372,43 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Auto-initialize on load (Default: English 'en')
-document.addEventListener('DOMContentLoaded', () => {
-    let initialLang = 'en';
+/**
+ * Detect user's preferred language automatically:
+ * 1. Explicit choice saved in localStorage (highest priority)
+ * 2. Device / Browser Locale (navigator.languages / navigator.language)
+ * 3. Default fallback: English ('en')
+ */
+function detectPreferredLanguage() {
     try {
-        initialLang = localStorage.getItem('preferred_lang') || 'en';
+        const savedLang = localStorage.getItem('preferred_lang');
+        if (savedLang && I18N_DICTIONARY[savedLang]) {
+            return savedLang;
+        }
     } catch (e) {
-        initialLang = 'en';
+        // LocalStorage fallback
     }
+
+    // Check browser languages list
+    const candidateLanguages = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+    for (const rawLang of candidateLanguages) {
+        if (!rawLang) continue;
+        const code = rawLang.toLowerCase().trim();
+        // Indonesian locale tags: 'id', 'id-id', 'in', 'in-id'
+        if (code.startsWith('id') || code.startsWith('in')) {
+            return 'id';
+        }
+        // English locale tags
+        if (code.startsWith('en')) {
+            return 'en';
+        }
+    }
+
+    // Default to English for all international audience
+    return 'en';
+}
+
+// Auto-initialize on load with automatic language detection
+document.addEventListener('DOMContentLoaded', () => {
+    const initialLang = detectPreferredLanguage();
     setLanguage(initialLang);
 });
