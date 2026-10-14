@@ -1235,13 +1235,18 @@
 
                 <div class="products-grid" style="grid-template-columns: minmax(300px, 600px);">
                     <!-- HFT Gold Averaging Up -->
-                    <div class="product-card">
+                    <div class="product-card" style="border-color: rgba(6, 182, 212, 0.45); box-shadow: 0 4px 20px rgba(6, 182, 212, 0.15);">
                         <div>
                             <div class="product-top">
                                 <span class="product-tag">XAUUSD HIGH-SPEED</span>
                                 <span class="product-price price-hft" data-i18n="ea_price_hft">$50 USD</span>
                             </div>
-                            <h4 class="product-name" data-i18n="prod_hft_gold_name">HFT Gold Averaging Up</h4>
+                            <h4 class="product-name">
+                                <a href="hft-gold-averaging-up/" target="_blank" style="color: inherit; text-decoration: none; display: flex; align-items: center; justify-content: space-between;">
+                                    <span data-i18n="prod_hft_gold_name">HFT Gold Averaging Up</span>
+                                    <span style="font-size: 0.85rem; color: var(--accent-cyan);">↗</span>
+                                </a>
+                            </h4>
                             <p class="product-desc" data-i18n="prod_hft_gold_desc">
                                 High-frequency multi-position averaging algorithm specifically engineered for XAUUSD with micro-pip cycle management and rapid equity recovery.
                             </p>
@@ -1250,10 +1255,17 @@
                             <div class="product-features">
                                 <span class="p-pill">XAUUSD Averaging</span>
                                 <span class="p-pill">Micro-Pip Cycling</span>
-                                <span class="p-pill">Drawdown Recovery</span>
-                                <span class="p-pill">Dynamic Spread Filter</span>
+                                <span class="p-pill">Dual TF (M5/M1)</span>
+                                <span class="p-pill" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.35);">Backtest Verified</span>
                             </div>
-                            <a href="#inquiry" class="btn-card-action btn-action-hft" data-i18n="ea_btn_order_hft">⚡ Inquire HFT Series ($50)</a>
+                            <div style="display: flex; gap: 0.5rem; flex-direction: column;">
+                                <a href="hft-gold-averaging-up/" target="_blank" class="btn-card-action" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); color: #ffffff; font-weight: 700; box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);" data-i18n="ea_btn_detail_hft">
+                                    ⚡ Full Description & Backtest ↗
+                                </a>
+                                <a href="#inquiry" class="btn-card-action btn-action-hft" style="padding: 0.45rem 1rem; font-size: 0.8rem; opacity: 0.9;" data-i18n="ea_btn_order_hft">
+                                    ⚡ Inquire HFT Series ($50)
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
