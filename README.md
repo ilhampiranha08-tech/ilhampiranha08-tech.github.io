@@ -18,7 +18,7 @@ Official web portfolio and showcase repository of **Ilham Sugiri** — Independe
 | :--- | :--- | :--- |
 | **Vortex: File Manager** | High-performance Android file manager with Dual-Pane navigation, hardware AES-256 vault, WebDAV/FTP server, and cloud VFS. | [Open Vortex Showcase ↗](https://ilhampiranha08-tech.github.io/vortex/) |
 | **Pixara Gallery** | Smart AI Gallery & Pro Photo Editor with on-device local AI OCR, biometric secret vault, and zero telemetry. | [Open Pixara Showcase ↗](https://ilhampiranha08-tech.github.io/pixara/) |
-| **Super Expert Advisors** | 13 quantitative automated trading robots engineered for MetaTrader 4 and MetaTrader 5 (.ex4 / .ex5). | [Open EA Showcase ↗](https://ilhampiranha08-tech.github.io/superexpertadvisors/) |
+| **Super Expert Advisors** | 11 quantitative automated trading robots engineered for MetaTrader 4 and MetaTrader 5 (.ex4 / .ex5). | [Open EA Showcase ↗](https://ilhampiranha08-tech.github.io/superexpertadvisors/) |
 | **Piranha Ubuntu Comic** | 10-chapter educational comic series exploring Linux Ubuntu terminal mastery, APT, and open-source ethics. | [Read Online Web Reader ↗](https://ilhampiranha08-tech.github.io/piranha-ubuntu-komik/) |
 
 ---
