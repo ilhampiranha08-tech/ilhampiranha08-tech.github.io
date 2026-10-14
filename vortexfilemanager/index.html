@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vortex: File Manager | Detail Aplikasi & Arsitektur — Ilham Sugiri</title>
-    <meta name="description" content="Detail lengkap aplikasi Vortex File Manager buatan Ilham Sugiri. Fast, Secure, Ad-Free, Dual Pane, AES-256 Safe Folder, WebDAV/FTP Server, dan Zero Tracking.">
+    <title>Vortex: File Manager | Architecture & Engineering Showcase — Ilham Sugiri</title>
+    <meta name="description" content="Official architecture and feature showcase of Vortex: File Manager by Ilham Sugiri. Fast, Secure, Ad-Free, Dual Pane, AES-256 Safe Folder, WebDAV/FTP Server, and Zero Tracking.">
     <meta name="author" content="Ilham Sugiri">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Vortex: File Manager — Fast. Secure. Ad-Free.">
-    <meta property="og:description" content="Next-Generation Android Storage Experience. Dual-Pane, AES-256 Hardware Encryption, WebDAV/FTP Server & Zero Tracking oleh Ilham Sugiri.">
+    <meta property="og:description" content="Next-Generation Android Storage Experience. Dual-Pane, AES-256 Hardware Encryption, WebDAV/FTP Server & Zero Tracking by Ilham Sugiri.">
     <meta property="og:image" content="../assets/banner_vortex_landscape.webp">
     <meta property="og:url" content="https://ilhampiranha08-tech.github.io/vortex/">
     <meta property="og:type" content="website">
@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/i18n.css">
 
     <style>
         :root {
@@ -545,8 +547,8 @@
     <!-- STICKY TOP NAV -->
     <header>
         <div class="container nav-content">
-            <a href="../" class="nav-back">
-                <span>◀</span> Kembali ke Profil Ilham Sugiri
+            <a href="../" class="nav-back" data-i18n="nav_back_profile">
+                <span>◀</span> Back to Ilham Sugiri Profile
             </a>
             
             <div class="nav-title">
@@ -555,9 +557,25 @@
             </div>
 
             <div class="nav-actions">
-                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-official-web" title="Kunjungi Website Resmi Vortex">
-                    🌐 Website Resmi (vortexapp.my.id) ↗
+                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-official-web" title="Official Website" data-i18n="nav_official_web">
+                    🌐 Official Website (vortexapp.my.id) ↗
                 </a>
+
+                <div class="lang-switch-wrapper">
+                    <button class="lang-btn" id="langBtn" onclick="toggleLangDropdown(event)" aria-label="Select Language">
+                        <span class="globe-icon">🌐</span>
+                        <span id="currentLangLabel">EN</span>
+                        <span class="arrow-icon">▼</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" id="opt-en" onclick="setLanguage('en')">
+                            <span class="flag">🇬🇧</span> English <span class="tag-badge">Default</span>
+                        </button>
+                        <button class="lang-option" id="opt-id" onclick="setLanguage('id')">
+                            <span class="flag">🇮🇩</span> Bahasa Indonesia
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -566,22 +584,22 @@
 
         <!-- HERO SECTION -->
         <section class="hero">
-            <span class="badge-pill">⚡ 100% Android Native • Zero Tracking • Ad-Free</span>
+            <span class="badge-pill" data-i18n="vortex_page_tag">⚡ 100% Android Native • Zero Tracking • Ad-Free</span>
             <h1 class="hero-title">Vortex: <span>File Manager</span></h1>
-            <p class="hero-tagline">Fast. Secure. Ad-Free. Next-Generation Android Storage Experience.</p>
-            <p class="hero-desc">
-                Aplikasi manajemen berkas Android generasi lanjut yang dibangun dengan performa native murni (Kotlin & Jetpack Compose). Menghadirkan navigasi Dual-Pane, brankas enkripsi tingkat tinggi AES-256, server WebDAV/FTP nirkabel, dan arsitektur tanpa pelacak.
+            <p class="hero-tagline" data-i18n="vortex_hero_tagline">Fast. Secure. Ad-Free. Next-Generation Android Storage Experience.</p>
+            <p class="hero-desc" data-i18n="vortex_hero_desc">
+                A next-generation Android file management application built entirely with pure native performance (Kotlin & Jetpack Compose). Featuring Dual-Pane navigation, military-grade AES-256 hardware-backed encryption, wireless WebDAV/FTP servers, and an uncompromising zero-telemetry architecture.
             </p>
 
             <div class="hero-cta-group">
-                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" style="font-size: 1rem; padding: 0.85rem 1.6rem;">
-                    🌐 Buka Website Resmi Vortex (vortexapp.my.id) ↗
+                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" style="font-size: 1rem; padding: 0.85rem 1.6rem;" data-i18n="vortex_btn_official">
+                    🌐 Open Official Website (vortexapp.my.id) ↗
                 </a>
-                <a href="../privacy.html" class="btn btn-secondary">
-                    🛡️ Kebijakan Privasi
+                <a href="../privacy.html" class="btn btn-secondary" data-i18n="vortex_btn_privacy">
+                    🛡️ Privacy Policy
                 </a>
-                <a href="https://github.com/ilhampiranha08-tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    💻 GitHub Developer
+                <a href="https://github.com/ilhampiranha08-tech" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="vortex_btn_github">
+                    💻 Developer GitHub
                 </a>
             </div>
 
@@ -593,11 +611,11 @@
             <!-- CALLOUT HIGHLIGHT TO OFFICIAL APEX DOMAIN -->
             <div class="official-site-callout">
                 <div class="callout-text">
-                    <h3>🌐 Website Resmi: vortexapp.my.id</h3>
-                    <p>Unduh rilis terbaru, pelajari integrasi Google Drive OAuth aman, dan pantau log pembaruan aplikasi.</p>
+                    <h3 data-i18n="vortex_callout_title">🌐 Official Website: vortexapp.my.id</h3>
+                    <p data-i18n="vortex_callout_desc">Download official releases, learn about Google Drive OAuth verification, and track application changelogs.</p>
                 </div>
-                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-official-web">
-                    Kunjungi vortexapp.my.id ↗
+                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-official-web" data-i18n="vortex_callout_btn">
+                    Visit vortexapp.my.id ↗
                 </a>
             </div>
         </section>
@@ -605,8 +623,8 @@
         <!-- 6 KEY PILLARS FEATURE DEEP DIVE -->
         <section class="section">
             <div class="section-header">
-                <span class="section-tag">01 // CORE SYSTEM CAPABILITIES</span>
-                <h2 class="section-title">6 Pilar Fitur Utama Vortex</h2>
+                <span class="section-tag" data-i18n="vortex_sec1_tag">01 // CORE SYSTEM CAPABILITIES</span>
+                <h2 class="section-title" data-i18n="vortex_sec1_title">6 Core Pillars of Vortex</h2>
             </div>
 
             <div class="features-grid">
@@ -614,54 +632,54 @@
                 <!-- 1. DUAL PANE -->
                 <div class="feature-card">
                     <span class="feature-icon">⚡</span>
-                    <h3 class="feature-title">Super Fast Explorer with Dual Pane</h3>
-                    <p class="feature-desc">
-                        Navigasi dua folder atau media penyimpanan secara berdampingan dalam satu layar. Memindahkan berkas besar, membandingkan isi direktori, dan menyalin data menjadi instan tanpa perlu bolak-balik aplikasi.
+                    <h3 class="feature-title" data-i18n="vortex_f1_title">Super Fast Explorer with Dual Pane</h3>
+                    <p class="feature-desc" data-i18n="vortex_f1_desc">
+                        Simultaneous side-by-side navigation across two folders or storage devices. Moving heavy files, comparing directories, and organizing archives is instant without switching apps.
                     </p>
                 </div>
 
                 <!-- 2. AES-256 SAFE FOLDER -->
                 <div class="feature-card">
                     <span class="feature-icon">🔒</span>
-                    <h3 class="feature-title">AES-256 Safe Folder Encryption</h3>
-                    <p class="feature-desc">
-                        Brankas berkas rahasia terenkripsi simetris AES-256-GCM. Kunci kriptografi diamankan langsung oleh chip perangkat keras <em>Android Hardware Keystore</em>. Privasi dokumen dan foto penting terlindungi 100% di level hardware.
+                    <h3 class="feature-title" data-i18n="vortex_f2_title">AES-256 Safe Folder Encryption</h3>
+                    <p class="feature-desc" data-i18n="vortex_f2_desc">
+                        Hardware-backed symmetric AES-256-GCM encrypted vault. Cryptographic keys are protected directly by the Android Hardware Keystore chip. Document and photo privacy is 100% fortified at the silicon level.
                     </p>
                 </div>
 
                 <!-- 3. WEBDAV / FTP SERVER & P2P -->
                 <div class="feature-card">
                     <span class="feature-icon">📡</span>
-                    <h3 class="feature-title">WebDAV/FTP Server & P2P Near-Drop</h3>
-                    <p class="feature-desc">
-                        Ubah smartphone menjadi server file nirkabel lokal. Kelola dan unduh seluruh file di HP dari peramban web laptop atau PC Windows/Mac/Linux tanpa kabel data. Dilengkapi transfer peer-to-peer instan via Wi-Fi Direct.
+                    <h3 class="feature-title" data-i18n="vortex_f3_title">WebDAV/FTP Server & P2P Near-Drop</h3>
+                    <p class="feature-desc" data-i18n="vortex_f3_desc">
+                        Transform your smartphone into a local wireless file server. Manage and download your phone's files from any PC or laptop browser without cables. Includes instant peer-to-peer Wi-Fi Direct Near-Drop transfers.
                     </p>
                 </div>
 
                 <!-- 4. NETWORK PROTOCOL CLIENT -->
                 <div class="feature-card">
                     <span class="feature-icon">🌐</span>
-                    <h3 class="feature-title">SMB / FTP / SFTP / WebDAV Client</h3>
-                    <p class="feature-desc">
-                        Klien protokol jaringan all-in-one. Terhubung langsung ke NAS (*Network Attached Storage*), shared folder Windows (SMB), server Linux jarak jauh melalui enkripsi SSH (SFTP), dan server cloud WebDAV secara terpadu.
+                    <h3 class="feature-title" data-i18n="vortex_f4_title">SMB / FTP / SFTP / WebDAV Client</h3>
+                    <p class="feature-desc" data-i18n="vortex_f4_desc">
+                        All-in-one network client. Connect seamlessly to personal NAS (Network Attached Storage), Windows network shares (SMB), remote Linux servers over encrypted SSH (SFTP), and cloud WebDAV servers.
                     </p>
                 </div>
 
                 <!-- 5. CODE & TEXT EDITOR -->
                 <div class="feature-card">
                     <span class="feature-icon">📝</span>
-                    <h3 class="feature-title">Text Editor with Undo/Redo</h3>
-                    <p class="feature-desc">
-                        Editor teks dan kode sumber bawaan yang ringan namun andal. Dilengkapi penomoran baris, fitur <em>Undo & Redo</em> tanpa batas, pencarian cepat, dan dukungan multi-format untuk membaca serta mengedit kode langsung di perangkat.
+                    <h3 class="feature-title" data-i18n="vortex_f5_title">Text Editor with Undo/Redo</h3>
+                    <p class="feature-desc" data-i18n="vortex_f5_desc">
+                        Lightweight yet capable built-in code and text editor. Features line numbering, unlimited Undo & Redo, rapid text search, and multi-format support for inspecting and modifying scripts on the fly.
                     </p>
                 </div>
 
                 <!-- 6. STORAGE ANALYZER -->
                 <div class="feature-card">
                     <span class="feature-icon">🧹</span>
-                    <h3 class="feature-title">Storage Analyzer & Smart Clean-Up</h3>
-                    <p class="feature-desc">
-                        Visualisasi interaktif penggunaan memori internal dan kartu SD. Menganalisis file-file berukuran raksasa, file residu yang terlupakan, folder sampah, dan duplikasi berkas agar ruang penyimpanan tetap lega dan optimal.
+                    <h3 class="feature-title" data-i18n="vortex_f6_title">Storage Analyzer & Smart Clean-Up</h3>
+                    <p class="feature-desc" data-i18n="vortex_f6_desc">
+                        Interactive visual breakdown of internal storage and SD card capacity. Accurately pinpoints bulky space-hogging files, leftover cache, and duplicate files to keep your device clutter-free.
                     </p>
                 </div>
 
@@ -672,53 +690,53 @@
         <section class="section">
             <div class="showcase-split">
                 <div class="poster-wrapper">
-                    <img src="../assets/poster_vortex.jpg" alt="Poster Fitur Lengkap Vortex File Manager - Ilham Sugiri">
+                    <img src="../assets/poster_vortex.jpg" alt="Vortex File Manager Full Architecture Poster - Ilham Sugiri">
                 </div>
 
                 <div class="arch-content">
-                    <span class="section-tag">02 // ARCHITECTURE & ENGINEERING</span>
-                    <h3>Dirancang untuk Kecepatan, Keamanan & Nol Iklan</h3>
-                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;">
-                        Vortex bukan sekadar file explorer biasa. Dibangun dari nol oleh Ilham Sugiri dengan filosofi keandalan tingkat Linux pada perangkat Android modern.
+                    <span class="section-tag" data-i18n="vortex_sec2_tag">02 // ARCHITECTURE & ENGINEERING</span>
+                    <h3 data-i18n="vortex_arch_title">Engineered for Velocity, Security & Zero Ads</h3>
+                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;" data-i18n="vortex_arch_desc">
+                        Vortex is not just another file explorer. Built from the ground up by Ilham Sugiri with the uncompromising robustness of Linux on modern Android devices.
                     </p>
 
                     <ul class="arch-points">
                         <li>
                             <span class="check-icon">✔</span>
                             <div>
-                                <strong>Virtual File System (VFS) Modular:</strong>
-                                Mengabstraksi Local Storage, SAF, USB OTG, NAS SMB, FTP, SFTP, dan WebDAV ke dalam satu unified I/O stream berkinerja tinggi.
+                                <strong data-i18n="vortex_arch_p1_title">Modular Virtual File System (VFS):</strong>
+                                <span data-i18n="vortex_arch_p1_desc">Abstracts Local Storage, SAF, USB OTG, NAS SMB, FTP, SFTP, and WebDAV into a unified high-throughput I/O pipeline.</span>
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">✔</span>
                             <div>
-                                <strong>Zero-Telemetry & 100% Ad-Free:</strong>
-                                Tidak ada SDK iklan, pelacak perilaku, analitik invasif, ataupun server relai perantara. Seluruh lalu lintas data berjalan langsung titik-ke-titik (P2P).
+                                <strong data-i18n="vortex_arch_p2_title">Zero-Telemetry & 100% Ad-Free:</strong>
+                                <span data-i18n="vortex_arch_p2_desc">No ad SDKs, no behavioral trackers, no invasive analytics, and no third-party relay proxies. All network traffic flows strictly peer-to-peer.</span>
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">✔</span>
                             <div>
-                                <strong>Reactive Kotlin Coroutines & Jetpack Compose:</strong>
-                                Antarmuka modern yang sangat mulus pada layar 120Hz tanpa freeze saat membaca jutaan file sistem.
+                                <strong data-i18n="vortex_arch_p3_title">Reactive Kotlin Coroutines & Jetpack Compose:</strong>
+                                <span data-i18n="vortex_arch_p3_desc">Next-gen user interface rendering at a smooth 120Hz with zero UI freezing when indexing massive filesystem trees.</span>
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">✔</span>
                             <div>
-                                <strong>Integrasi Cloud OAuth Aman:</strong>
-                                Dukungan Google Drive dengan protokol autentikasi token resmi tanpa menyimpan password pengguna.
+                                <strong data-i18n="vortex_arch_p4_title">Secure Cloud OAuth Integration:</strong>
+                                <span data-i18n="vortex_arch_p4_desc">Google Drive support utilizing official token authorization without storing user credentials.</span>
                             </div>
                         </li>
                     </ul>
 
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald">
-                            🌐 Kunjungi vortexapp.my.id ↗
+                        <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" data-i18n="vortex_btn_official">
+                            🌐 Open Official Website (vortexapp.my.id) ↗
                         </a>
-                        <a href="../privacy.html" class="btn btn-secondary">
-                            🛡️ Detail Kebijakan Privasi
+                        <a href="../privacy.html" class="btn btn-secondary" data-i18n="vortex_btn_privacy">
+                            🛡️ Privacy Policy
                         </a>
                     </div>
                 </div>
@@ -727,17 +745,17 @@
 
         <!-- BIG OFFICIAL WEBSITE CALLOUT BANNER -->
         <section class="final-cta">
-            <span class="badge-pill" style="margin-bottom: 1rem;">🌐 OFFICIAL APEX DOMAIN</span>
-            <h2>Kunjungi Website Resmi Vortex</h2>
-            <p>
-                Aplikasi Vortex: File Manager memiliki portal web resmi tersendiri untuk dokumentasi teknis, verifikasi Google API Trust & Safety, dan rilis aplikasi.
+            <span class="badge-pill" style="margin-bottom: 1rem;" data-i18n="vortex_final_badge">🌐 OFFICIAL APEX DOMAIN</span>
+            <h2 data-i18n="vortex_final_title">Explore the Official Vortex Portal</h2>
+            <p data-i18n="vortex_final_desc">
+                Vortex: File Manager maintains its own verified official apex portal for technical documentation, Google API Trust & Safety compliance, and software releases.
             </p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2;">
-                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" style="font-size: 1.1rem; padding: 0.9rem 2.25rem;">
-                    🌐 Buka https://vortexapp.my.id/ Sekarang ↗
+                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" style="font-size: 1.1rem; padding: 0.9rem 2.25rem;" data-i18n="vortex_final_btn">
+                    🌐 Open https://vortexapp.my.id/ Now ↗
                 </a>
-                <a href="../" class="btn btn-secondary" style="font-size: 1.1rem; padding: 0.9rem 1.8rem;">
-                    ◀ Kembali ke Profil Ilham Sugiri
+                <a href="../" class="btn btn-secondary" style="font-size: 1.1rem; padding: 0.9rem 1.8rem;" data-i18n="vortex_final_back">
+                    ◀ Back to Ilham Sugiri Profile
                 </a>
             </div>
         </section>
@@ -748,24 +766,26 @@
     <footer>
         <div class="container">
             <div class="footer-nav">
-                <a href="../">Beranda Profil</a>
+                <a href="../" data-i18n="nav_apps">Profile Home</a>
                 <span>•</span>
-                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer">Website Resmi Vortex (vortexapp.my.id)</a>
+                <a href="https://vortexapp.my.id/" target="_blank" rel="noopener noreferrer">Official Website (vortexapp.my.id)</a>
                 <span>•</span>
-                <a href="../privacy.html">Kebijakan Privasi</a>
+                <a href="../privacy.html" data-i18n="vortex_btn_privacy">Privacy Policy</a>
                 <span>•</span>
                 <a href="https://superexpertadvisors.web.id/" target="_blank" rel="noopener noreferrer">Super Expert Advisors</a>
                 <span>•</span>
-                <a href="../piranha-ubuntu-komik/">Komik Piranha Ubuntu</a>
+                <a href="../piranha-ubuntu-komik/">Piranha Ubuntu Comic</a>
                 <span>•</span>
                 <a href="https://github.com/ilhampiranha08-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <p>&copy; 2026 <strong>Ilham Sugiri</strong>. All rights reserved.</p>
-            <p style="margin-top: 0.4rem; font-size: 0.8rem; color: #475569;">
+            <p data-i18n="footer_rights">&copy; 2026 <strong>Ilham Sugiri</strong>. All rights reserved.</p>
+            <p style="margin-top: 0.4rem; font-size: 0.8rem; color: #475569;" data-i18n="vortex_footer_sub">
                 Vortex: File Manager is an independent Android application crafted by Ilham Sugiri • Bantul, Indonesia
             </p>
         </div>
     </footer>
 
+    <!-- I18N SCRIPT -->
+    <script src="../assets/i18n.js"></script>
 </body>
 </html>
