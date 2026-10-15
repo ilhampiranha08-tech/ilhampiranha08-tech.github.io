@@ -11,7 +11,9 @@
         en: {},
         id: {},
         es: {},
-        pt: {}
+        pt: {},
+        ru: {},
+        hi: {}
     };
 
     /**
@@ -19,7 +21,7 @@
      */
     window.registerI18nModule = function(moduleData) {
         if (!moduleData) return;
-        ['en', 'id', 'es', 'pt'].forEach(lang => {
+        ['en', 'id', 'es', 'pt', 'ru', 'hi'].forEach(lang => {
             if (moduleData[lang]) {
                 window.I18N_DICTIONARY[lang] = Object.assign(window.I18N_DICTIONARY[lang] || {}, moduleData[lang]);
             }
@@ -144,6 +146,8 @@
             if (code.startsWith('id') || code.startsWith('in')) return 'id';
             if (code.startsWith('es')) return 'es';
             if (code.startsWith('pt')) return 'pt';
+            if (code.startsWith('ru')) return 'ru';
+            if (code.startsWith('hi')) return 'hi';
             if (code.startsWith('en')) return 'en';
         }
 
